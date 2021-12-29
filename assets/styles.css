@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+
+.navbar {
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+}
+
+.menu {
+  padding: 4rem;
+  background-color: white;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  transition: transform 0.75s;
+  transform: translateY(-100%);
+}
+
+.menu div {
+  margin-bottom: 1rem;
+}
+
+.menu.open {
+  transform: translateY(0);
+}
+
+.toggle {
+  border: none;
+  background-color: transparent;
+}
+
+.toggle span {
+  display: block;
+  width: 2rem;
+  height: 2px;
+  transition: transform 0.1s;
+  background-color: black;
+}
+
+.toggle span:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.toggle.open span:first-child {
+  margin-bottom: 0;
+  transform: rotate(45deg);
+}
+
+.toggle.open span:last-child {
+  margin-top: -2px;
+  transform: rotate(-45deg);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-links div:first-child {
+  margin-right: 1rem;
+}
+
+@media only screen and (min-width: 760px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .navbar {
+    padding: 0;
+    width: auto;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transform: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .menu div {
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+
+  .toggle {
+    display: none;
+  }
+}
+
+/* Layout */
+main {
+  margin: 0 1rem;
+}
+
+.container {
+  margin: auto;
+  max-width: 100vw;
+}
+
+@media only screen and (min-width: 760px) {
+  .container {
+    max-width: 760px;
+  }
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Typography */
+h1 {
+  font-size: 3rem;
+  line-height: 3.25rem;
+  margin: 1.5rem 0rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+a:hover {
+  color: black;
+}
+
+@media only screen and (min-width: 760px) {
+  html,
+  body {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 4.25rem;
+    margin: 2rem 0rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+/* Graph */
+.graph-title {
+  padding-left: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.graph {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.xlabel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0;
+  width: 100%;
+  height: 1.75rem;
+}
+
+.bar img {
+  height: 100%;
+  width: auto;
+  margin-left: 0.5rem;
+}
+
+.bar div {
+  width: 0%;
+  height: 75%;
+  transition: width 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.graph.active .bar#css div {
+  background-color: #2965f1;
+  width: 55%;
+}
+
+.graph.active .bar#python div {
+  background-color: #ffd343;
+  width: 80%;
+  transition-delay: 0.1s;
+}
+
+.graph.active .bar#java div {
+  background-color: #1fbed6;
+  width: 25%;
+  transition-delay: 0.2s;
+}
+
+.graph.active .bar#js div {
+  background-color: #323330;
+  width: 75%;
+  transition-delay: 0.3s;
+}
+
+.graph.active .bar#php div {
+  background-color: #787cb5;
+  width: 80%;
+  transition-delay: 0.4s;
+}
+
+.graph.active .bar#go div {
+  background-color: #29beb0;
+  width: 35%;
+  transition-delay: 0.5s;
+}
+
+.graph.active .bar#rust div {
+  background-color: #ce412b;
+  width: 15%;
+  transition-delay: 0.6s;
+}
+
+.graph.active .bar#rprogramming div {
+  background-color: #bfc2c5;
+  width: 30%;
+  transition-delay: 0.7s;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.dismiss-experience {
+  display: block;
+  text-align: center;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.experience div:first-child {
+  flex-basis: 1rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: auto;
+}
+
+.experience div:last-child {
+  padding-left: 1rem;
+}
+
+#collegebound div:first-child {
+  background-color: yellowgreen;
+}
+
+#accessAcademies div:first-child {
+  background-color: purple;
+}
+
+#launchcode div:first-child {
+  background-color: blue;
+}
+
+#mediacross div:first-child {
+  background-color: red;
+}
+
+#uchicago div:first-child {
+  background-color: maroon;
+}
+
+@media only screen and (min-width: 760px) {
+  .experience div:first-child {
+    flex-basis: 1.5rem;
+  }
+}
+
+.project {
+  margin-bottom: 2rem;
+}
