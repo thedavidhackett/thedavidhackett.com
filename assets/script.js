@@ -14,6 +14,8 @@ navLinks.forEach((link) => {
   });
 });
 
+let descriptors = document.querySelectorAll(".descriptor");
+
 let graph = document.querySelector(".graph");
 let graphWaypoint = document.querySelector("#graph-wp");
 

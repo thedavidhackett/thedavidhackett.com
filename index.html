@@ -65,17 +65,21 @@
     </nav>
     <main>
       <div class="container">
-        <h1>David</h1>
+        <h1>
+          Hi, I'm <span class="descriptor">David</span
+          ><span class="hidden">a Developer</span
+          ><span class="descriptor hidden">a Designer</span
+          ><span class="descriptor hidden">a Data Scientist</span
+          ><span class="descriptor hidden">David</span>
+        </h1>
         <section>
-          <p class="text-center">
-            <strong>Hi, I'm "the" David Hackett</strong>
-          </p>
           <p>
-            Why "the"? Well remember a time when Facebook was cool and new and
-            "the" Facebook, but then for some reason Justin Timberlake told Mark
-            Zuckerberg to drop the "the"? No? Well you ever notice how Ohio
-            State Football players say "the" Ohio State. That's why. It
-            definitely has nothing to do with what domain name was available.
+            I'm a developer and data scientist. I started programming in 2017
+            and fell in love with it. After completing LaunchCode's LC101 I got
+            a job as a web developer with a marketing firm: MediaCross, where
+            I've now worked for over three years. In 2021 I was accepted into
+            and began attending the University of Chicago where I am pursuing my
+            Masters of Science in Computational Analysis and Public Policy.
           </p>
         </section>
         <section>
@@ -83,12 +87,12 @@
           <ul>
             <li>
               <strong>Data Science:</strong> Python, R, Stata, SQL, Jupyter
-              Notebook, RStudio
+              Notebook, RStudio, ArcGIS
             </li>
             <li>
               <strong>Web Development:</strong> JavaScript, PHP, Go, Java, Rust,
-              React, Symfony, SpringBoot, Angular, MySQL, Postgres, MongoDB,
-              Docker, AWS, Firebase
+              React, Symfony, SpringBoot, Node, Angular, MySQL, Postgres,
+              MongoDB, Docker, AWS, Firebase
             </li>
             <li>
               <strong>Web Design:</strong> CSS, SCSS, Bootstrap, Tailwindcss
@@ -149,390 +153,15 @@
           </div>
           <div id="graph-wp"></div>
           <div class="xlabel">
-            <p>Used Occasionally</p>
-            <p>Used Often</p>
+            <p>Occasionally Used</p>
+            <p>Frequently Used</p>
           </div>
-        </section>
-        <section id="history">
-          <h2>History</h2>
-          <p>
-            After graduating from Washington University in Saint Louis I joined
-            Americorps and spent the next six plus years working in College
-            Access. After a while I decided to make a career 180 and applied for
-            LaunchCode, a free programming bootcamp in Saint Louis. From there I
-            got a job working as a web developer for a marketing firm,
-            MediaCross. Recently I decided to continue growing in my new career
-            direction after being accepted into University of Chicago's Master
-            of Science in Computational Analysis and Public Policy.
-          </p>
-        </section>
-        <section>
-          <div class="timeline-container">
-            <p class="text-center">
-              <strong>Click on a timeline section to learn more</strong>
-            </p>
-            <svg
-              id="timeline"
-              width="100%"
-              ascpect-ratio="2"
-              viewbox="0 0 200 100"
-            >
-              <text
-                x="5"
-                y="15"
-                stroke-width="0"
-                text-anchor="start"
-                fill="black"
-                font-family="Open Sans, sans-serif"
-                font-size="4"
-              >
-                August 2012
-              </text>
-              <rect
-                class="timeline-section"
-                cursor="pointer"
-                data-target="collegebound"
-                x="5"
-                y="20"
-                width="140"
-                height="10"
-                fill="yellowgreen"
-                stroke-width="1"
-              />
-              <text
-                class="timeline-section"
-                cursor="pointer"
-                data-target="collegebound"
-                x="75"
-                y="26"
-                text-anchor="middle"
-                stroke-width="0"
-                fill="white"
-                font-family="Open Sans, sans-serif"
-                font-size="4"
-              >
-                College Bound
-              </text>
-              <path
-                class="timeline-section"
-                cursor="pointer"
-                data-target="accessAcademies"
-                d="m 145, 20 h 10 a 30 20 0 0 1 0 40 v -10 a 16 10 0 0 0 0 -20 h -10"
-                stroke="purple"
-                fill="purple"
-                stroke-linejoin="round"
-                stroke-width="0"
-              />
-
-              <path
-                class="timeline-section"
-                cursor="pointer"
-                data-target="accessAcademies"
-                id="access_academies_path"
-                d="m 165 28 c 15 0, 15 23, 0 23 "
-                fill="transparent"
-              />
-
-              <text
-                class="timeline-section"
-                cursor="pointer"
-                data-target="accessAcademies"
-                stroke-width="0"
-                fill="white"
-                font-family="Open Sans, sans-serif"
-                font-size="4"
-              >
-                <textPath
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xlink:href="#access_academies_path"
-                >
-                  Access Academies
-                </textPath>
-              </text>
-              <path
-                class="timeline-section"
-                cursor="pointer"
-                data-target="launchcode"
-                d="m 185, 40 a 30 20 0 0 1 -30 20 v 8 c 0 0, 40 0, 40 -28 z"
-                stroke="blue"
-                fill="blue"
-                stroke-width="0"
-              />
-              <path
-                class="timeline-section"
-                cursor="pointer"
-                data-target="launchcode"
-                id="launchcode_path"
-                d="m 165 64 c 0 0, 38 0, 38 -65"
-                fill="transparent"
-              />
-              <text
-                class="timeline-section"
-                cursor="pointer"
-                data-target="launchcode"
-                stroke-width="0"
-                fill="white"
-                font-family="Open Sans, sans-serif"
-                font-size="4"
-              >
-                <textPath
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xlink:href="#launchcode_path"
-                >
-                  LaunchCode
-                </textPath>
-              </text>
-              <rect
-                class="timeline-section"
-                cursor="pointer"
-                data-target="mediacross"
-                x="55"
-                y="50"
-                width="100"
-                height="10"
-                fill="red"
-                stroke-width="1"
-              />
-              <text
-                class="timeline-section"
-                cursor="pointer"
-                data-target="mediacross"
-                x="105"
-                y="56"
-                text-anchor="middle"
-                stroke-width="0"
-                fill="white"
-                font-family="Open Sans, sans-serif"
-                font-size="4"
-              >
-                MediaCross
-              </text>
-              <rect
-                class="timeline-section"
-                cursor="pointer"
-                data-target="mediacross"
-                x="55"
-                y="60"
-                width="10"
-                height="10"
-                fill="maroon"
-                stroke-width="1"
-              />
-              <text
-                class="timeline-section"
-                cursor="pointer"
-                data-target="uchicago"
-                x="60"
-                y="66"
-                text-anchor="middle"
-                stroke-width="0"
-                fill="white"
-                font-family="Open Sans, sans-serif"
-                font-size="4"
-              >
-                UC
-              </text>
-              <text
-                x="54"
-                y="76"
-                stroke-width="0"
-                text-anchor="start"
-                fill="black"
-                font-family="Open Sans, sans-serif"
-                font-size="4"
-              >
-                December 2021
-              </text>
-            </svg>
-          </div>
-          <div>
-            <div id="collegebound" class="experience-container hidden">
-              <p><strong>College Bound Saint Louis</strong></p>
-              <div class="experience">
-                <div></div>
-                <div>
-                  <p class="mb-5">
-                    <strong>August 2012:</strong> Started as a College Prep
-                    Coach
-                  </p>
-                  <p class="mb-5">
-                    <strong>January 2014:</strong> Created a new writing
-                    program, students saw a 4 point increase on average for
-                    their English ACT Scores
-                  </p>
-                  <p class="mb-0">
-                    <strong>April 2015:</strong> 100% of my cohort was accepted
-                    into a 4 year university
-                  </p>
-                  <p class="mb-3">
-                    <strong>May 2015:</strong> Promoted to 10th Grade Manager
-                  </p>
-                  <p class="mb-3">
-                    <strong>January 2016:</strong> Created first College Bound
-                    Boys Club
-                  </p>
-                  <p class="mb-4">
-                    <strong>September 2016:</strong> Implemented new tutoring
-                    program, students saw on average an increase of one letter
-                    grade in subjected tutored
-                  </p>
-                  <p><strong>April 2017:</strong> Left for Access Academies</p>
-                </div>
-              </div>
-            </div>
-            <div id="accessAcademies" class="experience-container hidden">
-              <p><strong>Access Academies</strong></p>
-              <div class="experience">
-                <div></div>
-                <div>
-                  <p>
-                    <strong>May 2017:</strong> Started as a Graduate Support
-                    Counselor
-                  </p>
-                  <p class="mb-3">
-                    <strong>June 2017:</strong> Recruited speakers and planned
-                    events for Summer Programming
-                  </p>
-                  <p class="mb-2">
-                    <strong>January 2018:</strong> Created and taught ACT
-                    curriculum for high school students. Saw an average increase
-                    of 5 points from practice to actual test.
-                  </p>
-                  <p class="mb-2">
-                    <strong>April 2018:</strong> 80% of first cohort of middle
-                    schoolers got first choice schools.
-                  </p>
-                  <p class="mb-3">
-                    <strong>June 2018:</strong> Helped in planning, development,
-                    and hiring of new College and Career Counselor position.
-                  </p>
-                  <p>
-                    <strong>December 2019:</strong> Left Access Academies to
-                    find a programming job through LaunchCode
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div id="launchcode" class="experience-container hidden">
-              <p><strong>LaunchCode</strong></p>
-              <div class="experience">
-                <div></div>
-                <div>
-                  <p>
-                    <strong>January 2018:</strong> Started LaunchCode. Learned
-                    fundamentals of coding using Python
-                  </p>
-                  <p>
-                    <strong>March 2018:</strong> Started learning web
-                    development with Python/Flask, CSS, and HTML
-                  </p>
-                  <p>
-                    <strong>May 2018:</strong> Learned backend web development
-                    with Java/SpringBoot
-                  </p>
-                  <p>
-                    <strong>July 2018:</strong> Completed LaunchCodes LC101
-                    Program and entered into Lift Off
-                  </p>
-                  <p class="mb-2">
-                    <strong>September 2018:</strong> Completed personal project
-                    (Fantasy Cross Country, built in Java) and Lift Off
-                    Programming, entered into apprenticeship programming
-                  </p>
-                  <p>
-                    <strong>January 2019:</strong> After turning down a few
-                    apprenticeships that weren't the right fit I left the
-                    program to start at MediaCross as a web developer.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div id="mediacross" class="experience-container hidden">
-              <p><strong>MediaCross</strong></p>
-              <div class="experience">
-                <div></div>
-                <div>
-                  <p class="mb-2">
-                    <strong>February 2019:</strong> Started as programmer. My
-                    first code goes live for the SLU Digital Viewbook
-                    (PHP/Symfony).
-                  </p>
-                  <p class="mb-3">
-                    <strong>May 2019:</strong> Cleared backlog for Bridge
-                    Application (JavaScript/JQuery, PHP/Symfony).
-                  </p>
-                  <p>
-                    <strong class="mb-2">November 2019:</strong> Launched new
-                    Online Application for Military Sealift Command (Built in
-                    React and PHP/Symfony).
-                  </p>
-                  <p>
-                    <strong>February 2020:</strong> Title change to Full Stack
-                    Developer.
-                  </p>
-                  <p class="mb-2">
-                    <strong>April 2020:</strong> Completed first solo project,
-                    OCU's landing page (JavaScript and HTML).
-                  </p>
-                  <p>
-                    <strong>August 2020:</strong> Rebuilt our client management
-                    application using React and Golang.
-                  </p>
-                  <p class="mb-2">
-                    <strong>November 2020:</strong> SLU Law Digital Viewbook
-                    (built in PHP/Symfony) goes live.
-                  </p>
-                  <p>
-                    <strong> January 2021:</strong> Rebuilt and upgraded legacy
-                    websites for Military Sealift Command
-                  </p>
-                  <p>
-                    <strong>March 2021:</strong> Completed Illinois College
-                    Persona Quiz, another solo project, built using Gatsby and
-                    Tailwindcss.
-                  </p>
-                  <p class="mb-2">
-                    <strong>April 2021:</strong> Created analytics dashboard for
-                    our VizVid app (built in React and PHP/Symfony).
-                  </p>
-                  <p>
-                    <strong>August 2021:</strong> Completed work on Maryville
-                    International, also built using Gatsby and Tailwindcss.
-                  </p>
-                  <p>
-                    <strong>September 2021:</strong> Switched to part time as I
-                    started attending the University of Chicago.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div id="uchicago" class="experience-container hidden">
-              <p><strong>University of Chicago</strong></p>
-              <div class="experience">
-                <div></div>
-                <div>
-                  <p class="mb-2">
-                    <strong>September 2021:</strong> Started at University of
-                    Chicago's Harris School. Joined the Policy Review.
-                  </p>
-                  <p>
-                    <strong>December 2021:</strong> Finished 1st quarter,
-                    completing coursework in Python Programming, Advanced Stats,
-                    and Analytical Politics. First artcle is published.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="#dismiss" class="dismiss-experience hidden"
-            >Back to full timeline</a
-          >
         </section>
         <section id="projects">
           <h2>Projects</h2>
           <p class="mb-2">
             Below are some selected projects that demonstrate my work. Some
-            professional, some academics, some personal.
+            professional, some academic, some personal.
           </p>
           <div class="project">
             <p><strong>Saint Louis Neighborhood Schools</strong></p>
@@ -555,6 +184,20 @@
             >
           </div>
           <div class="project">
+            <p><strong>Maryville University International Viewbook</strong></p>
+            <p>
+              <em
+                >Web Development, Web Design, JavaScript, React, Gatsby, CSS,
+                Tailwindcss</em
+              >
+            </p>
+            <p>
+              My first solo project for MediaCross. This website was also my
+              first time trying out Gatsby and Tailwindcss.
+            </p>
+            <a href="https://www.maryville.edu/passport/">View live website</a>
+          </div>
+          <div class="project">
             <p><strong>Illinois College Persona Quiz</strong></p>
             <p>
               <em
@@ -564,11 +207,10 @@
             </p>
             <p>
               A professional project for a MediaCross client that I took the
-              lead on and did mostly solo. This website was my first time trying
-              out Gatsby and Tailwindcss. The most difficult part was the client
-              wanted to utilize GIFs on all the quiz answers. This made the load
-              time very slow, however I found various ways to optimize the GIFs
-              so that the website would load much more smoothly.
+              lead on and did mostly solo. The most difficult part was the
+              client wanted to utilize GIFs on all the quiz answers. This made
+              the load time very slow, however I found various ways to optimize
+              the GIFs so that the website would load much more smoothly.
             </p>
             <a href="https://uniquely.ic.edu/">View live website</a>
           </div>

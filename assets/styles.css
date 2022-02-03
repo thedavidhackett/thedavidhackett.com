@@ -280,7 +280,7 @@ a:hover {
 
 .graph.active .bar#js div {
   background-color: #323330;
-  width: 75%;
+  width: 80%;
   transition-delay: 0.3s;
 }
 
@@ -306,6 +306,55 @@ a:hover {
   background-color: #bfc2c5;
   width: 30%;
   transition-delay: 0.7s;
+}
+
+@media only screen and (min-width: 760px) {
+  .graph.active .bar#css div {
+    background-color: #2965f1;
+    width: 60%;
+  }
+
+  .graph.active .bar#python div {
+    background-color: #ffd343;
+    width: 85%;
+    transition-delay: 0.1s;
+  }
+
+  .graph.active .bar#java div {
+    background-color: #1fbed6;
+    width: 30%;
+    transition-delay: 0.2s;
+  }
+
+  .graph.active .bar#js div {
+    background-color: #323330;
+    width: 85%;
+    transition-delay: 0.3s;
+  }
+
+  .graph.active .bar#php div {
+    background-color: #787cb5;
+    width: 85%;
+    transition-delay: 0.4s;
+  }
+
+  .graph.active .bar#go div {
+    background-color: #29beb0;
+    width: 40%;
+    transition-delay: 0.5s;
+  }
+
+  .graph.active .bar#rust div {
+    background-color: #ce412b;
+    width: 20%;
+    transition-delay: 0.6s;
+  }
+
+  .graph.active .bar#rprogramming div {
+    background-color: #bfc2c5;
+    width: 35%;
+    transition-delay: 0.7s;
+  }
 }
 
 /* Timeline */
